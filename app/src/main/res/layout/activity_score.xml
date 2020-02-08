@@ -26,7 +26,7 @@
             android:layout_marginTop="32dp"/>
 
     <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/tvHomeName"
             style="@style/title_game_wizard"
             android:text="Home"
             android:textSize="18sp"
@@ -39,14 +39,14 @@
             app:layout_constraintStart_toStartOf="@+id/btGoalHome"/>
 
     <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/tvAwayName"
             style="@style/title_game_wizard"
             android:text="Away"
             android:textSize="18sp"
             android:textAllCaps="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="@+id/textView4"
+            app:layout_constraintTop_toTopOf="@+id/tvHomeName"
             app:layout_constraintStart_toStartOf="@+id/btAwayGoal"
             app:layout_constraintEnd_toEndOf="@+id/btAwayGoal"/>
 
@@ -58,7 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/tvHomeName"
             app:layout_constraintStart_toStartOf="@+id/btGoalHome"
             app:layout_constraintEnd_toEndOf="@+id/btGoalHome"/>
 
@@ -96,17 +96,19 @@
             android:layout_marginEnd="42dp"/>
 
     <Button
+            android:id="@+id/btRestart"
             style="@style/custom_button"
             android:text="Reiniciar partida"
-            android:id="@+id/btRestart" android:layout_marginTop="56dp"
+            android:layout_marginTop="56dp"
             app:layout_constraintTop_toBottomOf="@+id/btGoalHome"
             app:layout_constraintStart_toStartOf="@+id/btGoalHome"
             app:layout_constraintEnd_toEndOf="@+id/btAwayGoal"/>
 
     <Button
+            android:id="@+id/btScoreExit"
             style="@style/custom_button"
             android:text="Finalizar partida"
-            android:id="@+id/button4" android:layout_marginTop="32dp"
+            android:layout_marginTop="32dp"
             app:layout_constraintTop_toBottomOf="@+id/btRestart"
             app:layout_constraintStart_toStartOf="@+id/btRestart"
             app:layout_constraintEnd_toEndOf="@+id/btRestart"/>
